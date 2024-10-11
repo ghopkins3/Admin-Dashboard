@@ -13,32 +13,24 @@
 .left-container { 
     display: flex;
     flex-direction: column;
-    background-color: skyblue;
-    width: 15%;
-    max-width: 15%;
-    min-width: 15%;
+    background-color: #1992d4;
+    width: 20%;
     height: 100vh;
     min-height: 100vh;
     max-height: 100vh;
 
 }
 
-.left-container > span {
-    margin-right: 13.5rem;
-}
-
 .right-container {
-    width: 85%;
-    max-width: 85%;
-    min-width: 85%;
-    background-color: salmon;
+    background-color: #e2e8f0;
+    width: 80%;
 }
 
 .right-header-container {
     background-color: white;
-    height: 13rem;
-    max-height: 13rem;
-    min-height: 13rem;
+    height: 12rem;
+    max-height: 12rem;
+    min-height: 12rem;
     box-shadow: 0 4px 4px rgb(209, 186, 186);
 }
 
@@ -95,7 +87,7 @@
     flex-direction: row;
     margin-left: 5rem;
     margin-right: 5rem;
-    margin-top: 2rem;
+    margin-top: 1.45rem;
     align-items: center;
 }
 
@@ -145,28 +137,119 @@
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    margin-left: 2.25rem;
-    border: 2px solid black;
+    margin-left: 1.15rem;
+    font-size: 1.75rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    filter: invert(100%);
 }
 
 .sidenav-text-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin-left: 2.25rem;
-    border: 2px solid black;
+    filter: invert(100%);
 }
 
 .grid-item {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 2rem;
-    border: 2px solid green;
 }
 
 .grid-item > p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.grid-item > img {
+    height: 2rem;
+}
+
+#dashboard-icon {
+    height: 3rem;
+}
+
+#communities {
+    margin-bottom: 4rem;
+}
+
+#card-headings {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 2.2rem;
+    margin-top: 2rem;
+    gap: 65rem;
+}
+
+.body-container {
+    display: flex;
+    border: 2px solid black;
+    height: 40rem;
+    max-height: 40rem;
+    min-height: 40rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+}
+
+.left-cards {
+    display: grid;
+    border: 2px solid black;
+    width: 80%;
+    grid-template-columns: repeat(2, 35rem);
+    gap: 2rem;
+}
+
+.card {
+    border-radius: 0.8rem;
+    background-color: white;
     border: 2px solid red;
 }
 
-.grid-item > a {
-    border: 2px solid blue;
+.card > h2 {
+    padding-left: 1.5rem;
+    margin-bottom: 0.2rem;
+    font-size: 1.5rem;
+}
+
+.card > p {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 2.5rem;
+    font-size: 1.2rem;
+}
+
+.card > img {
+    margin-left: 32rem;
+    margin-top: 0.5rem;
+    height: 2rem;
+}
+
+.card > img:hover {
+    cursor: pointer;
+    filter: invert(50%);
+}
+
+.bottom-icons > img {
+    height: 2rem;
+}
+
+.bottom-icons > img:hover {
+    cursor: pointer;
+    filter: invert(50%);
+}
+
+.bottom-icons {
+    display: flex;
+    gap: 2rem;
+    margin-left: 28rem;
+}
+
+.right-cards {
+    display: grid;
+    width: 20%;
+    min-width: 20%;
+    max-width: 20%;
 }
