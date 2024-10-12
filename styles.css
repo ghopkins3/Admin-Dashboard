@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 .parent-container {
     display: flex;
     flex-direction: row;
@@ -87,7 +91,7 @@
     flex-direction: row;
     margin-left: 5rem;
     margin-right: 5rem;
-    margin-top: 1.45rem;
+    margin-top: 0.2rem;
     align-items: center;
 }
 
@@ -98,11 +102,13 @@
 
 #pfp-big {
     height: 5rem;
+    margin-top: 1rem;
 }
 
 .intro-text {
     margin-left: 2rem;
-    margin-top: 1rem;
+    margin-top: 1.45rem;
+    width: 45rem;
     font-weight: bold;
 }
 
@@ -117,37 +123,44 @@
 .right-buttons {
     display: flex;
     flex-direction: row;
-    margin-left: 39.5rem;
-    gap: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 9rem;
+    gap: 2rem;
 }
 
 .right-buttons > button {
     background-color: #1992d4;
     color: white;
-    width: 6rem;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
+    width: 7rem;
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
     border: none;
     border-radius: 10rem;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 #dashboard-heading {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    margin-left: 1.15rem;
+    margin-left: 4rem;
     font-size: 1.75rem;
     margin-top: 2rem;
     margin-bottom: 3rem;
+    margin-right: 5rem;
     filter: invert(100%);
+}
+
+#dashboard-heading:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .sidenav-text-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    margin-left: 2.25rem;
+    margin-left: 4.4rem;
     filter: invert(100%);
 }
 
@@ -155,15 +168,22 @@
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 2rem;
+    margin-right: 6rem;
 }
 
 .grid-item > p {
     font-size: 1.5rem;
+    font-weight: 600;
     margin-bottom: 1.5rem;
 }
 
 .grid-item > img {
     height: 2rem;
+}
+
+.grid-item:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 #dashboard-icon {
@@ -176,8 +196,8 @@
 
 #card-headings {
     display: flex;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.4rem;
+    font-weight: 600;
     margin-left: 2.2rem;
     margin-top: 2rem;
     gap: 65rem;
@@ -198,6 +218,7 @@
     width: 80%;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    overflow: auto;
 }
 
 .card {
@@ -209,18 +230,20 @@
 .card > h2 {
     padding-left: 1.5rem;
     margin-bottom: 0.2rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 .card > p {
     padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-right: 1.5em;
+    margin-bottom: 0.5rem;
     font-size: 1.2rem;
+    color: #646464;
 }
 
 .card > img {
     margin-left: 32rem;
-    margin-top: 0.5rem;
     height: 2rem;
 }
 
@@ -244,6 +267,10 @@
     margin-left: 28rem;
 }
 
+#extra {
+    margin-top: 2rem;
+}
+
 .right-cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -252,26 +279,38 @@
     max-width: 20%;
     min-width: 20%;
     gap: 4rem;
-    border: 2px solid black;
     margin-left: 2rem;
 }
 
 .right-card {
     display: grid;
     background-color: white;
-    border: 2px solid black;
     grid-template-columns: 1fr;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    border-radius: 0.8rem;
+}
+
+.announcement {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.announcement > p, .announcement > h3 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .announcement > p {
     margin-bottom: 1rem;
+    color: #646464;
 }
 
 .announcement > h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 0.5rem;
+}
+
+hr {
+    border: 1px solid rgb(228, 220, 220)
 }
 
 #trending-card {
@@ -280,23 +319,27 @@
 
 #trending {
     position: absolute;
-    top: 70%;
-    font-size: 1.5rem;
-    font-weight: bold;
+    top: 39rem;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
 #trending-card > div:nth-child(1) {
-    padding-top: 1.5rem;
+    padding-top: 0.5rem;
 }
 
 .trend {
     display: grid;
-    grid-template-columns: 1fr 2.2fr;
+    grid-template-columns: 1fr 2.5fr;
     border: 2px
 }
 
 .trend > img {
     height: 3.5rem;
+}
+
+.summary > p:nth-child(2) {
+    color: #646464;
 }
 
 .summary {
