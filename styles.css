@@ -185,7 +185,6 @@
 
 .body-container {
     display: flex;
-    border: 2px solid black;
     height: 40rem;
     max-height: 40rem;
     min-height: 40rem;
@@ -196,16 +195,15 @@
 
 .left-cards {
     display: grid;
-    border: 2px solid black;
     width: 80%;
-    grid-template-columns: repeat(2, 35rem);
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
 
 .card {
     border-radius: 0.8rem;
+    border-left: 0.6rem solid orange;
     background-color: white;
-    border: 2px solid red;
 }
 
 .card > h2 {
@@ -217,7 +215,6 @@
 .card > p {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    padding-bottom: 2.5rem;
     font-size: 1.2rem;
 }
 
@@ -249,7 +246,59 @@
 
 .right-cards {
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
     width: 20%;
-    min-width: 20%;
     max-width: 20%;
+    min-width: 20%;
+    gap: 4rem;
+    border: 2px solid black;
+    margin-left: 2rem;
+}
+
+.right-card {
+    display: grid;
+    background-color: white;
+    border: 2px solid black;
+    grid-template-columns: 1fr;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.announcement > p {
+    margin-bottom: 1rem;
+}
+
+.announcement > h3 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+#trending-card {
+    padding-left: 1.25rem;
+}
+
+#trending {
+    position: absolute;
+    top: 70%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#trending-card > div:nth-child(1) {
+    padding-top: 1.5rem;
+}
+
+.trend {
+    display: grid;
+    grid-template-columns: 1fr 2.2fr;
+    border: 2px
+}
+
+.trend > img {
+    height: 3.5rem;
+}
+
+.summary {
+    padding-top: 0.5rem;
 }
